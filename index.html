@@ -73,6 +73,7 @@
 			var ed = tinyMCE.activeEditor;
 			var content = ed.selection.getContent({'format':'html'});
 			var new_selection_content = '<span class="' + this.name() +'">' + content + '</span>';
+			// todo remove any other text styles from child elements.
 			ed.execCommand('insertHTML', false, new_selection_content);
 		}
 
@@ -81,7 +82,9 @@
 		}
 
 		var convertToOrg = function() {
-			console.log(convert(tinyMCE.activeEditor.getBody()));
+			var converted = convert(tinyMCE.activeEditor.getBody());
+			document.getElementById('converted').innerText =converted;
+			console.log(converted);
 		}
 
 		var convert = function(ele) {
@@ -107,5 +110,6 @@
 <body>
 	<textarea>Easy (and free!) You should check out our premium features.</textarea>
 	<button onclick="convertToOrg()">Convert</button>
+	<div id="converted"></div>
 </body>
 </html>
