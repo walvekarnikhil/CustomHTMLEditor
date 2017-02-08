@@ -1,0 +1,202 @@
+$brand-color:  #00c4b3;
+$primary-color: #001c45;
+$action-color: #ff6000;
+$secondary-color: #489fdf;
+$inverted-color: #000;
+$default-color: #716d6b;
+$light-color: #999593;
+
+$text-font: "ARS Maquette Pro";
+$webdings-font: "webdings";
+$wingdings-font: "wingdings";
+
+$body-xsmall-font-size: 8pt;
+$body-small-font-size: 9pt;
+$body-medium-font-size: 10pt;
+$body-large-font-size: 11pt;
+$body-xlarge-font-size: 12pt;
+
+$subheader-small-font-size: 14pt;
+$subheader-medium-font-size: 16pt;
+
+$header-xsmall-font-size: 20pt;
+$header-medium-font-size: 26pt;
+
+$footnote-medium-font-size: 7pt;
+$footnote-large-font-size: 8pt;
+
+  .org {
+  	background-color: gray;
+  	display: inline;
+  }
+
+.body-md-action-strong {
+	color: $action-color;
+	font-weight: bold;
+	font-size: $body-medium-font-size;	
+}
+.body-md-brand-strong {
+	color: $brand-color;
+	font-weight: bold;
+	font-size: $body-medium-font-size;		
+}
+.body-md-primary{
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-medium-font-size;	
+}
+
+.body-md-primary-strong {
+	color: $primary-color;
+	font-weight: bold;
+	font-size: $body-medium-font-size;	
+}
+
+.body-sm-primary-strong {
+	color: $primary-color;
+	font-weight: bold;
+	font-size: $body-small-font-size;	
+}
+
+.body-lg-action-strong {
+	color: $action-color;
+	font-weight: bold;
+	font-size: $body-large-font-size;
+}
+
+.subheader-md-inverted-strong {
+	color: $inverted-color;
+	font-weight: bold;
+	font-size: $subheader-medium-font-size;
+}
+
+.body-sm-inverted {
+	color: $inverted-color;
+	font-weight: normal;
+	font-size: $subheader-small-font-size;
+}
+
+.body-sm-inverted-strong {
+	color: $inverted-color;
+	font-weight: bold;
+	font-size: $body-small-font-size;	
+}
+
+.header-xs-brand-strong {
+	color: $brand-color;
+	font-weight: bold;
+	font-size: $header-xsmall-font-size;	
+}
+
+.header-xs-action {
+	color: $action-color;
+	font-weight: normal;
+	font-size: $header-xsmall-font-size;	
+}	 	 
+
+.body-sm-primary {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-small-font-size;
+}
+
+.body-xl-primary-strong {
+	color: $primary-color;
+	font-weight: bold;
+	font-size: $body-xlarge-font-size;	
+}
+
+.footnote-md-default {
+	color: $default-color;
+	font-weight: normal;
+	font-size: $footnote-medium-font-size;	
+} 
+
+.body-xs-primary {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-xsmall-font-size;	
+}
+
+.header-md-brand-strong {
+	color: $brand-color;
+	font-weight: bold;
+	font-size: $header-medium-font-size;	
+}
+
+.subheader-md-primary {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $subheader-medium-font-size;	
+}
+
+.footnote-lg-default {
+	color: $default-color;
+	font-weight: normal;
+	font-size: $footnote-large-font-size;	
+}	 
+
+.subheader-sm-primary-strong {
+	color: $primary-color;
+	font-weight: bold;
+	font-size: $subheader-small-font-size;	
+}
+
+.body-xl-primary {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-xlarge-font-size;	
+}
+
+.body-xl-action-strong {
+	color: $action-color;
+	font-weight: bold;
+	font-size: $body-xlarge-font-size;	
+}
+
+.body-xl-brand-strong {
+	color: $action-color;
+	font-weight: bold;
+	font-size: $body-xlarge-font-size;	
+}
+
+.body-md-primary-hindent {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-medium-font-size;
+	/* hindent */
+}
+
+.body-md-primary-strong-hindent {
+	color: $primary-color;
+	font-weight: bold;
+	font-size: $body-medium-font-size;	
+	/* hindent */
+}
+
+.body-sm-primary-strong-hindent {
+	color: $primary-color;
+	font-weight: bold;
+	font-size: $body-small-font-size;	
+	/* hindent */	
+}
+
+.webdings-sm-default {
+	color: $default-color;
+	font-weight: normal;
+	font-size: $body-small-font-size;
+	font-family: $webdings-font;	
+}
+.webdings-sm-primary {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-small-font-size;
+	font-family: $webdings-font;		
+}
+
+.wingdings-md-primary {
+	color: $primary-color;
+	font-weight: normal;
+	font-size: $body-medium-font-size;
+	font-family: $wingdings-font;	
+}

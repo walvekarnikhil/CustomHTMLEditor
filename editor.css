@@ -1,0 +1,151 @@
+.org {
+  background-color: gray;
+  display: inline; }
+
+.body-md-action-strong {
+  color: #ff6000;
+  font-weight: bold;
+  font-size: 10pt; }
+
+.body-md-brand-strong {
+  color: #00c4b3;
+  font-weight: bold;
+  font-size: 10pt; }
+
+.body-md-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 10pt; }
+
+.body-md-primary-strong {
+  color: #001c45;
+  font-weight: bold;
+  font-size: 10pt; }
+
+.body-sm-primary-strong {
+  color: #001c45;
+  font-weight: bold;
+  font-size: 9pt; }
+
+.body-lg-action-strong {
+  color: #ff6000;
+  font-weight: bold;
+  font-size: 11pt; }
+
+.subheader-md-inverted-strong {
+  color: #000;
+  font-weight: bold;
+  font-size: 16pt; }
+
+.body-sm-inverted {
+  color: #000;
+  font-weight: normal;
+  font-size: 14pt; }
+
+.body-sm-inverted-strong {
+  color: #000;
+  font-weight: bold;
+  font-size: 9pt; }
+
+.header-xs-brand-strong {
+  color: #00c4b3;
+  font-weight: bold;
+  font-size: 20pt; }
+
+.header-xs-action {
+  color: #ff6000;
+  font-weight: normal;
+  font-size: 20pt; }
+
+.body-sm-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 9pt; }
+
+.body-xl-primary-strong {
+  color: #001c45;
+  font-weight: bold;
+  font-size: 12pt; }
+
+.footnote-md-default {
+  color: #716d6b;
+  font-weight: normal;
+  font-size: 7pt; }
+
+.body-xs-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 8pt; }
+
+.header-md-brand-strong {
+  color: #00c4b3;
+  font-weight: bold;
+  font-size: 26pt; }
+
+.subheader-md-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 16pt; }
+
+.footnote-lg-default {
+  color: #716d6b;
+  font-weight: normal;
+  font-size: 8pt; }
+
+.subheader-sm-primary-strong {
+  color: #001c45;
+  font-weight: bold;
+  font-size: 14pt; }
+
+.body-xl-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 12pt; }
+
+.body-xl-action-strong {
+  color: #ff6000;
+  font-weight: bold;
+  font-size: 12pt; }
+
+.body-xl-brand-strong {
+  color: #ff6000;
+  font-weight: bold;
+  font-size: 12pt; }
+
+.body-md-primary-hindent {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 10pt;
+  /* hindent */ }
+
+.body-md-primary-strong-hindent {
+  color: #001c45;
+  font-weight: bold;
+  font-size: 10pt;
+  /* hindent */ }
+
+.body-sm-primary-strong-hindent {
+  color: #001c45;
+  font-weight: bold;
+  font-size: 9pt;
+  /* hindent */ }
+
+.webdings-sm-default {
+  color: #716d6b;
+  font-weight: normal;
+  font-size: 9pt;
+  font-family: "webdings"; }
+
+.webdings-sm-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 9pt;
+  font-family: "webdings"; }
+
+.wingdings-md-primary {
+  color: #001c45;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: "wingdings"; }
+
+/*# sourceMappingURL=editor.css.map */
