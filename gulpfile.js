@@ -4,7 +4,7 @@ var minifyCSS = require('gulp-csso');
 var gulpCopy = require('gulp-copy');
 var del = require('del');
 
-var sourceFiles = [ 'client/*.html', 'client/*.css' ];
+var sourceFiles = [ 'client/**/*.html', 'client/**/*.css','client/**/*.js' ];
 var destination = 'dest/';
 
 
@@ -26,4 +26,9 @@ gulp.task('clean', function(options) {
   del(['dest'], options);
 })
 
+gulp.task('demo',['default'], function() {
+  return gulp.src('dest/**/*.*')
+    .pipe(gulpCopy('demo',{prefix:1}))
+    .pipe(gulp.dest('demo'))
+});
 gulp.task('default', [ 'copy', 'css' ]);
