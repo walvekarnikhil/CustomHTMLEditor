@@ -3,9 +3,9 @@
 <head>
 	<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 	<script>
-		tinymce.init({ 
+		tinymce.init({
 			selector: 'textarea',
-			content_css : 'editor.css' ,
+			content_css : 'css/editor.css' ,
 			height: 500,
       forced_root_block : false,
 			menubar: false,
@@ -22,6 +22,7 @@
 
 		});
 
+		var orgVariables = ['support-phone'];
 
 		var textStyleArr = ['body-md-action-strong',
 		'body-md-brand-strong',
