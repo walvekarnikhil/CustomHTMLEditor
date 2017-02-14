@@ -8,11 +8,12 @@ tinymce.init({
   plugins: [
   'advlist autolink lists',
   'searchreplace visualblocks code fullscreen',
-  'insertdatetime paste code'
+  'paste code'
   ],
-  toolbar: 'mybutton | insert | styleselect | bold italic ',
+  toolbar: 'mybutton | orgVariableButton | styleselect | bold italic ',
   setup: function(editor) {
-    editor.addButton('mybutton',textStyleMenu(editor));
+    editor.addButton('mybutton',customStyleMenu(editor,'Text Styles',textStyleArr));
+    editor.addButton('orgVariableButton',customPresetMenu(editor,'Org Variables',orgVariables));
   },
 
 });
@@ -48,21 +49,44 @@ var textStyleArr = ['body-md-action-strong',
 'webdings-sm-primary',
 'wingdings-md-primary'];
 
-var textStyleMenu = function(editor) {
+var customStyleMenu = function(editor, menuLabel, customStyleArr) {
   var menuArr = [];
   for (var i=0; i< textStyleArr.length; i++) {
     menuArr.push({
-      name: textStyleArr[i],
-      text: textStyleArr[i],
+      name: customStyleArr[i],
+      text: customStyleArr[i],
       onclick: selectTextStyle
     });
   }
   return  {
     type: 'menubutton',
-    text: 'Text styles',
+    text: menuLabel,
     icon: false,
     menu: menuArr
   };
+}
+
+var customPresetMenu = function(editor, menuLabel, customStyleArr) {
+  var menuArr = [];
+  for (var i=0; i< textStyleArr.length; i++) {
+    menuArr.push({
+      name: customStyleArr[i],
+      text: customStyleArr[i],
+      onclick: addPreset
+    });
+  }
+  return  {
+    type: 'menubutton',
+    text: menuLabel,
+    icon: false,
+    menu: menuArr
+  };
+}
+
+var addPreset = function() {
+  var ed = tinyMCE.activeEditor;
+  var new_selection_content = '<span contenteditable="false" class="preset ' + this.name() +'">' + this.name() + '</span>';
+  ed.insertContent(new_selection_content);
 }
 
 var selectTextStyle = function() {

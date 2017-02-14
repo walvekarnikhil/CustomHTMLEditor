@@ -25,37 +25,37 @@ $header-medium-font-size: 26pt;
 $footnote-medium-font-size: 7pt;
 $footnote-large-font-size: 8pt;
 
-  .org {
-  	background-color: gray;
-  	display: inline;
-  }
+.preset {
+	background-color: gray;
+	display: inline;
+}
 
 .body-md-action-strong {
 	color: $action-color;
 	font-weight: bold;
-	font-size: $body-medium-font-size;	
+	font-size: $body-medium-font-size;
 }
 .body-md-brand-strong {
 	color: $brand-color;
 	font-weight: bold;
-	font-size: $body-medium-font-size;		
+	font-size: $body-medium-font-size;
 }
 .body-md-primary{
 	color: $primary-color;
 	font-weight: normal;
-	font-size: $body-medium-font-size;	
+	font-size: $body-medium-font-size;
 }
 
 .body-md-primary-strong {
 	color: $primary-color;
 	font-weight: bold;
-	font-size: $body-medium-font-size;	
+	font-size: $body-medium-font-size;
 }
 
 .body-sm-primary-strong {
 	color: $primary-color;
 	font-weight: bold;
-	font-size: $body-small-font-size;	
+	font-size: $body-small-font-size;
 }
 
 .body-lg-action-strong {
@@ -79,20 +79,20 @@ $footnote-large-font-size: 8pt;
 .body-sm-inverted-strong {
 	color: $inverted-color;
 	font-weight: bold;
-	font-size: $body-small-font-size;	
+	font-size: $body-small-font-size;
 }
 
 .header-xs-brand-strong {
 	color: $brand-color;
 	font-weight: bold;
-	font-size: $header-xsmall-font-size;	
+	font-size: $header-xsmall-font-size;
 }
 
 .header-xs-action {
 	color: $action-color;
 	font-weight: normal;
-	font-size: $header-xsmall-font-size;	
-}	 	 
+	font-size: $header-xsmall-font-size;
+}
 
 .body-sm-primary {
 	color: $primary-color;
@@ -103,61 +103,61 @@ $footnote-large-font-size: 8pt;
 .body-xl-primary-strong {
 	color: $primary-color;
 	font-weight: bold;
-	font-size: $body-xlarge-font-size;	
+	font-size: $body-xlarge-font-size;
 }
 
 .footnote-md-default {
 	color: $default-color;
 	font-weight: normal;
-	font-size: $footnote-medium-font-size;	
-} 
+	font-size: $footnote-medium-font-size;
+}
 
 .body-xs-primary {
 	color: $primary-color;
 	font-weight: normal;
-	font-size: $body-xsmall-font-size;	
+	font-size: $body-xsmall-font-size;
 }
 
 .header-md-brand-strong {
 	color: $brand-color;
 	font-weight: bold;
-	font-size: $header-medium-font-size;	
+	font-size: $header-medium-font-size;
 }
 
 .subheader-md-primary {
 	color: $primary-color;
 	font-weight: normal;
-	font-size: $subheader-medium-font-size;	
+	font-size: $subheader-medium-font-size;
 }
 
 .footnote-lg-default {
 	color: $default-color;
 	font-weight: normal;
-	font-size: $footnote-large-font-size;	
-}	 
+	font-size: $footnote-large-font-size;
+}
 
 .subheader-sm-primary-strong {
 	color: $primary-color;
 	font-weight: bold;
-	font-size: $subheader-small-font-size;	
+	font-size: $subheader-small-font-size;
 }
 
 .body-xl-primary {
 	color: $primary-color;
 	font-weight: normal;
-	font-size: $body-xlarge-font-size;	
+	font-size: $body-xlarge-font-size;
 }
 
 .body-xl-action-strong {
 	color: $action-color;
 	font-weight: bold;
-	font-size: $body-xlarge-font-size;	
+	font-size: $body-xlarge-font-size;
 }
 
 .body-xl-brand-strong {
 	color: $action-color;
 	font-weight: bold;
-	font-size: $body-xlarge-font-size;	
+	font-size: $body-xlarge-font-size;
 }
 
 .body-md-primary-hindent {
@@ -170,33 +170,33 @@ $footnote-large-font-size: 8pt;
 .body-md-primary-strong-hindent {
 	color: $primary-color;
 	font-weight: bold;
-	font-size: $body-medium-font-size;	
+	font-size: $body-medium-font-size;
 	/* hindent */
 }
 
 .body-sm-primary-strong-hindent {
 	color: $primary-color;
 	font-weight: bold;
-	font-size: $body-small-font-size;	
-	/* hindent */	
+	font-size: $body-small-font-size;
+	/* hindent */
 }
 
 .webdings-sm-default {
 	color: $default-color;
 	font-weight: normal;
 	font-size: $body-small-font-size;
-	font-family: $webdings-font;	
+	font-family: $webdings-font;
 }
 .webdings-sm-primary {
 	color: $primary-color;
 	font-weight: normal;
 	font-size: $body-small-font-size;
-	font-family: $webdings-font;		
+	font-family: $webdings-font;
 }
 
 .wingdings-md-primary {
 	color: $primary-color;
 	font-weight: normal;
 	font-size: $body-medium-font-size;
-	font-family: $wingdings-font;	
+	font-family: $wingdings-font;
 }
