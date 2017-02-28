@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/walvekarnikhil/CustomHTMLEditor#readme",
   "devDependencies": {
+    "css-loader": "^0.26.1",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-copy": "^1.0.0",
     "gulp-csso": "^2.0.0",
-    "gulp-scss": "^1.4.0"
+    "gulp-scss": "^1.4.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "webpack": "^2.2.1"
   }
 }

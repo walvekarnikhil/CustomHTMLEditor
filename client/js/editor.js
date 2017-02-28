@@ -1,3 +1,6 @@
+
+
+
 tinymce.init({
   selector: 'textarea',
   content_css : 'css/editor.css' ,
