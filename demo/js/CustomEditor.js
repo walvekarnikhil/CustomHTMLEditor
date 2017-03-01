@@ -1,4 +1,5 @@
 var CustomEditor = (function (tinymce) {
+  'use strict';
   var _api = {};
   var _initDone = false;
   var menus = [];
@@ -16,32 +17,41 @@ var CustomEditor = (function (tinymce) {
   var addMenusToEditor = function(editor) {
     for (var i=0; i< menus.length; i++) {
       var menu = menus[i];
-      editor.addButton('customMenu' + i,customMenu(editor,menu.name,menu.list, menu.style));
+      editor.addButton('customMenu' + i,addCustomMenu(editor,menu.name,menu.list, menu.style));
     }
-    // editor.addButton('mybutton',customMenu(editor,'Text Styles',textStyleArr));
-    // editor.addButton('orgVariableButton',customMenu(editor,'Org Variables',orgVariables, addPreset));
   };
 
   var selectPreset = function() {
     var ed = tinyMCE.activeEditor;
-    var new_selection_content = '<span contenteditable="false" class="preset ' + this.name() +'">' + this.name() + '</span>';
+    var dataTag = getDataTag(this);
+    var new_selection_content = '<span contenteditable="false" class="preset ' + this.name() +'" data-tag="' + dataTag + '">' + this.name() + '</span>';
     ed.insertContent(new_selection_content);
+  };
+
+  var getDataTag = function(menuElement) {
+    var dataTag = menuElement.name();
+    if (menuElement.data && menuElement.data.tag) {
+      dataTag = menuElement.data.tag;
+    }
+    return dataTag;
   };
 
   var selectTextStyle = function() {
     var ed = tinyMCE.activeEditor;
     var content = ed.selection.getContent({'format':'html'});
-    var new_selection_content = '<span class="' + this.name() +'">' + content + '</span>';
+    var dataTag = getDataTag(this);
+    var new_selection_content = '<span class="' + this.name() +'" data-tag="' + dataTag + '">' + content + '</span>';
     // todo remove any other text styles from child elements.
     ed.execCommand('insertHTML', false, new_selection_content);
   };
 
-  var customMenu = function(editor, menuLabel, customStyleArr, clickHandler) {
+  var addCustomMenu = function(editor, menuLabel, customStyleArr, clickHandler) {
     var menuArr = [];
     for (var i=0; i< customStyleArr.length; i++) {
       menuArr.push({
-        name: customStyleArr[i],
-        text: customStyleArr[i],
+        name: customStyleArr[i].name,
+        text: customStyleArr[i].text,
+        tag: customStyleArr[i].tag,
         onclick: clickHandler
       });
     }
@@ -94,6 +104,31 @@ var CustomEditor = (function (tinymce) {
   };
 
   _api.MenuType = menuType;
+  var _convert = function(ele) {
+    var nodes = ele.childNodes;
+    // var convertedNodes = [];
+    var result = '';
+    if (ele.nodeType == 3) {
+      result = ele.nodeValue;
+    } else {
+      var tagName = ele.attributes['data-tag'].value;
+      result = '[' + tagName + ']';
+      for (var i = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+        result += _convert(node);
+      }
+      result += '[/' + tagName + ']';
+    }
+    return result;
+  };
 
+  _api.convert = function() {
+    var ele = _tinymce.activeEditor.getBody();
+    var result = '';
+    for (var i = 0; i < ele.childNodes.length; i++) {
+      result += _convert(ele.childNodes[i]);
+    }
+    return result;
+  };
   return _api;
 }(tinymce));
